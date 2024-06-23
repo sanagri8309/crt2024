@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args){
+        Scanner s=new Scanner(System.in);
+            int n;
+        n=s.nextInt();
+       if(n<100||n>200)
+       {
+            System.out.println("INVALID INPUT");
+          
+       }
+        else
+        {
+       int   c=n/4;
+        System.out.printf("%d\n%d\n%d\n%d",c,c,c,c+n%4);
+        }
+        
+    }
+    
+}
